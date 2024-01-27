@@ -1,11 +1,11 @@
-function findMissingNumber(numbers = []) {
-  numbers.sort();
-  for (let i = 0; i < numbers.length; i++) {
-    if (i === numbers[i]) {
+function findMissingNumber(nums = []) {
+  nums.sort();
+  for (let i = 0; i < nums.length; i++) {
+    if (i === nums[i]) {
       continue;
     } else {
       return i;
     }
   }
-  return numbers.length;
+  return nums.length;
 }
